@@ -1,0 +1,357 @@
+div,ul,li {overflow:hidden;}
+/*------------------------------------------------ -x68
+	表格样式
+------------------------------------------------ -x68*/
+.table2 
+{
+	width:100%; 
+	border:1.0px solid #ddd;
+	border-collapse:collapse;
+	cursor:default;
+}
+.PageColorMode_Night .table2
+{
+	border:1.0px solid #222;
+}
+.table2 td
+{
+	border: 1px solid #eee;
+	min-width: 30px;
+	width: auto;
+}
+.PageColorMode_Night .table2 td
+{
+	border: 1px solid #2c2c2c;
+}
+.table2 .tr
+{
+	height: 40px;
+}
+.table2 .tr2 
+{
+	height: 40px;
+	text-align: center;
+	background-color: #eee;
+}
+.PageColorMode_Night .tr2 
+{
+	background-color:#2c2c2c;
+}
+
+/*游民评测*/
+/*橙色版本*/
+.review_Table1 {width:100%; height:194px; border:0; border-collapse:collapse; background:#282a2d;}
+.review_Table1 .review_td1 {width:100%; height:25px; background:url(../gsAppHTMLTemplate_image/reviewTable_Background.gif);}
+.review_Table1 .review_td2 {width:20%; background-color:#171717; line-height:56px; font-size:40px; color:#fff; text-align:center;}
+.review_Table1 .review_td3 {width:80%; height:16px; padding:8px 0 0 8px; background-color:#d8602e; vertical-align:top; font-size:16px; font-weight:bold; text-align:left; color:#fff;}
+.review_Table1 .review_td4 {width:80%; height:20px; background-color:#d8602e; padding-left:8px; font-size:12px; text-align:left; color:#fff;}
+.review_Table1 .review_td5 {width:20%; height:auto;}
+.review_Table1 .review_td6 {width:80%; height:70px; padding:8px 4px 0 0; line-height:22px; font-size:14px; text-indent:2em; color:#ccc;}
+.review_Table1 .review_td7 {writing-mode:tb-rl; padding-bottom:5px; font-size:28px; font-weight:bold; text-align:center; line-height:28px; color:#EC7339;}
+.review_Table1 .review_td8 {width:100%; height:25px; background:url(../gsAppHTMLTemplate_image/reviewTable_Background.gif);}
+.review_Table2 {border:0; border-bottom:3px solid #c75028; width:100%; height:auto; background-color:#282a2d;}
+.review_Table2 .review_td1,
+.review_Table2 .review_td2,
+.review_Table2 .review_td3,
+.review_Table2 .review_td4 {padding-bottom:4px; width:50%; height:auto; text-align:left; vertical-align:top; color:#ccc;}
+.review_Table2 .review_td1,
+.review_Table2 .review_td2 {background:url(../gsAppHTMLTemplate_image/reviewTable_Good.gif) center center no-repeat;}
+.review_Table2 .review_td3,
+.review_Table2 .review_td4 {background-image:url(../gsAppHTMLTemplate_image/reviewTable_Bad.gif) center center no-repeat;}
+.review_Table2 .review_td1,
+.review_Table2 .review_td3 {background-position:8px 0; padding-left:32px;}
+.review_Table2 .review_td2,
+.review_Table2 .review_td4 {background-position:0 0; padding-left:26px;}
+.review_Table2 .review_td5 {width:auto; height:14px; background:url(../gsAppHTMLTemplate_image/reviewTable_Background10.jpg) no-repeat; padding-right:8px;}
+.review_Table2 .review_td6 {width:100%; height:5px;}
+/*蓝色版本*/
+.review_blue_Table1 {border:0; border-collapse:collapse; width:100%; height:194px; background:#282a2d;}
+.review_blue_Table1 .review_td1 {width:100%; height:25px; background:url(../gsAppHTMLTemplate_image/reviewTable_Background.gif);}
+.review_blue_Table1 .review_td2 {width:20%; background-color:#171717; line-height:56px; text-align:center; font-size:40px; font-family:Arial, Helvetica, sans-serif; color:#fff;}
+.review_blue_Table1 .review_td3 {padding:8px 0 0 8px; width:80%; height:16px; background-color:#059dc2; vertical-align:top; text-align:left; font-size:16px; font-weight:bold; color:#fff;}
+.review_blue_Table1 .review_td4 {width:80%; height:20px; padding-left:8px; background-color:#059dc2; font-size:12px; text-align:left; color:#fff;}
+.review_blue_Table1 .review_td5 {width:20%; height:auto;}
+.review_blue_Table1 .review_td6 {width:80%; height:70px; padding:8px 4px 0px 0px; line-height:22px; text-indent:2em; font-size:14px; color:#ccc;}
+.review_blue_Table1 .review_td7 {writing-mode:tb-rl; padding-bottom:5px; line-height:28px; text-align:center; font-size:28px; font-weight:bold; color:#059dc2;}
+.review_blue_Table1 .review_td8 {width:100%; height:25px; background:url(../gsAppHTMLTemplate_image/reviewTable_Background.gif);}
+.review_blue_Table2 {border:0; border-bottom:3px solid #059dc2; width:100%; height:auto; background-color:#282a2d;}
+.review_blue_Table2 .review_td1,
+.review_blue_Table2 .review_td2,
+.review_blue_Table2 .review_td3,
+.review_blue_Table2 .review_td4 {padding-bottom:4px; width:50%; height:auto; text-align:left; vertical-align:top; color:#ccc;}
+.review_blue_Table2 .review_td1,
+.review_blue_Table2 .review_td2 {background-image:url(../gsAppHTMLTemplate_image/reviewTable_Good.gif) center center no-repeat;}
+.review_blue_Table2 .review_td3,
+.review_blue_Table2 .review_td4 {background:url(../gsAppHTMLTemplate_image/reviewTable_Bad.gif) center center no-repeat;}
+.review_blue_Table2 .review_td1,
+.review_blue_Table2 .review_td3 {background-position:8px 0px; padding-left:32px;}
+.review_blue_Table2 .review_td2,
+.review_blue_Table2 .review_td4 {padding-left:26px; background-position:0 0;}
+.review_blue_Table2 .review_td5 {padding-right:8px; width:auto; height:14px; background:url(../gsAppHTMLTemplate_image/reviewTable_Background10.jpg) no-repeat;}
+.review_blue_Table2 .review_td6 {width:100%; height:5px;}
+/*------------------------------------------------ -x68
+@.Mid2L_con, 2015年7月9日 14:00 新增
+新增原因:属于新增的CSS样式,类名,对象名和从前不同
+用途：文章里显示链接下边的下划线
+------------------------------------------------ -x68*/
+.content .n1 {text-decoration:underline; color:#3871c8;}
+	.PageColorMode_Night .content .n1 {color:#3e6bb6;}
+.content a:hover.n1 {text-decoration:underline}
+/*------------------------------------------------ -x68
+	专栏作者信息
+------------------------------------------------ -x68*/
+.section {width:96%; padding:12px 2%; height:auto; background-color:#F4F4F4; overflow:hidden;}
+	.PageColorMode_Night .section {background-color:#272730;}
+.section .art {margin-bottom:8px; width:100%-10px; height:auto; overflow:hidden;}
+.section .art .head1 {float:left; width:64px; height:64px; margin-right:10px; overflow:hidden; border-radius:5px; margin:0 6px;}
+.section .art .head1 img {width:64px; height:64px;}
+.section .art .wubta .head2 .tit {display:block; float:left; display:block; width:auto; color:#666; overflow:hidden;}
+	.PageColorMode_Night .section .art .wubta .head2 .tit {color:#5f5f69;}
+.section .art .wubta .head2 .wlaut {color:#FD7F41;}
+	.PageColorMode_Night .section .art .wubta .head2 .wlaut {color:#d26217;}
+.section .art .wubta .head2 .author {display:block; width:auto; min-width:138px; height:auto; color:#FD7F41;}
+	.PageColorMode_Night .section .art .wubta .head2 .author {color:#d26217;}
+.section .art .wubta .head2_coed .wlaut_coed {color:#FD7F41;}
+	.PageColorMode_Night .section .art .wubta .head2_coed .wlaut_coed {color:#d26217;}
+.section .art .wubta .head2_coed .author_coed {display:block; width:auto; min-width:138px; height:auto; color:#FD7F41;}
+	.PageColorMode_Night .section .art .wubta .head2_coed .author_coed {color:#d26217;}
+.section .art .wubta .head2_coed .tit_coed {width:auto; height:20px; overflow:hidden; float:left;}
+.section .art .wubta .head2_coed .coed {margin-top:5px;}
+.section .head1 .mask {width:0px; height:0px; position:absolute; left:0; top:0; z-index:-9999; background:none;}
+.section .art .wubta .head2_coed .more,.section .art .wubta .head2 .more {display:none;}
+.section .art .wubta { /*width:75%;*/ height:64px;}
+.section .art .wubta tr { height:auto; width:75%;}
+.section .art .wubta tr td { height:auto; }
+.section .art .head3 {margin-top:10px; border-top:solid 1px #E2E2E2; width:auto; min-width:200px; height:auto; padding-top:10px; clear:both; font-size:16px; color:#333;}
+.PageColorMode_Night .section .art .head3 {border-top:solid 1px #201f25; color:#5f5f69;}
+/*
+------------------------------------------------ -x68
+@作者信息栏, 2015年7月2日 10:00 新增
+新增原因:属于新增的CSS样式,类名,对象名和从前不同
+------------------------------------------------ -x68
+*/
+.Author_column {background-color:#e8e8e8;}
+	.PageColorMode_Night .Author_column {background-color:#1d1c20;}
+.Author_column div.tit {white-space:nowrap; text-overflow:ellipsis; }
+.Author_column div.txt {white-space:nowrap; text-overflow:ellipsis; }
+div.ac1 {-webkit-box-flex:0; float:left; width:45px; height:48px; padding:6.0px 7.5px 6.0px 7.5px; background:#dbdbdb;}
+	.PageColorMode_Night div.ac1 {background:#1d1c21;}
+div.ac1 .GSImageBoxer {border-radius:22.5px; box-shadow:0 2px 5px 0 rgba(120,120,120,1);}
+	.PageColorMode_Night div.ac1 .GSImageBoxer {box-shadow:0 2px 5px 0 rgba(0,0,0,1);}
+div.ac1 img {width:45px; height:45px;}
+div.ac2 {line-height:30px; padding-left:4px;}
+.ac2 .like {display:none;}
+/*
+------------------------------------------------ -x68
+@游戏评测栏, 2015年7月9日 14:00 新增
+新增原因:属于新增的CSS样式,类名,对象名和从前不同
+------------------------------------------------ -x68
+*/
+/*游戏评测 新版*/
+.pingce {width:100%; height:auto; border-bottom:1px solid #cecece;}
+.pingce .pc1 {width:100%; height:55px; display:-webkit-box;}
+.pingce .pc1 .pc1_num {width:60px; height:55px; line-height:55px; text-align:center; color:#f2f2f3; font-size:30px; font-family:Arial; background:#f26723;}
+.pingce .pc1 .pc1_num {text-shadow:0 3px 10px rgba(0,0,0,0.5);}
+.pingce .pc1 .pc1_tit {-webkit-box-flex:1; padding:10px 0 0 10px; width:auto; height:55px; background:#202020 url("http://image.gamersky.com/webimg15/pcbg.gif") right 0 no-repeat; background-size:auto 55px;}
+.pingce .pc1 .pc1_tit .t1 {width:auto; height:18px; line-height:18px; color:#f2f2f3; font-size:16px; font-family:'Microsoft YaHei';}
+.pingce .pc1 .pc1_tit .t2 {width:auto; height:14px; line-height:14px; color:#999; font-size:12px;}
+.pingce .pc2 {width:100%; height:auto; display:-webkit-box;}
+.pingce .pc2 .pc2_L {padding:15px 10px; width:40px; height:auto; text-align:center; color:#ef511c; font-size:16px; font-family:'Microsoft YaHei'; background:#f0f0f0;}
+.pingce .pc2 .pc2_L {text-shadow:1px 1px 1px #fff; _filter:DropShadow(Color=#ffffff,OffX=1,OffY=1,Positive=1);}
+.pingce .pc2 .pc2_R {-webkit-box-flex:1; padding:15px 15px 5px; width:auto; height:auto; background:#f9f9fb; border-left:1px solid #f5f5f5;}
+.pingce .pc2 .pc2_R .txt {margin-bottom:5px; width:100%; height:auto; line-height:25px; font-size:14px;}
+.pingce .pc2 .pc2_R .like {margin-bottom:5px; padding:5px 0; width:100%; height:auto;}
+.pingce .pc2 .pc2_R .like span {margin:0 30px 5px 0; display:inline-block; width:100%; height:26px; line-height:26px; text-indent:25px; font-size:14px;}
+.pingce .pc2 .pc2_R .like span {background:#f2f2f3 url("http://image.gamersky.com/webimg15/jj.gif") no-repeat;}
+.pingce .pc2 .pc2_R .like span.jia {color:#e03800; background-position:7px 0;}
+.pingce .pc2 .pc2_R .like span.jian {color:#262626; background-position:7px -26px;}
+
+
+.PageColorMode_Night .pingce {background-color:#c02c02; border-color:#28262f;}
+.PageColorMode_Night .pingce .pc1 .pc1_num {background-color:#c02c02; color:#a3a3a3;}
+.PageColorMode_Night .pingce .pc1 .pc1_tit .t1 {color:#a3a3a3;}
+.PageColorMode_Night .pingce .pc2 {background-color:#2d2b35;}
+.PageColorMode_Night .pingce .pc2 .pc2_L {text-shadow:1px 1px 1px #000;}
+.PageColorMode_Night .pingce .pc2 .pc2_R {border-color:#28262f; background-color:#32303b; color:#605f65;}
+.PageColorMode_Night .pingce .pc2 .pc2_R .tuijian {border-bottom:1px dotted #656565;}
+.PageColorMode_Night .pingce .pc2 .pc2_R .like .jia {background-color:#38363f; color:#c22c00;}
+.PageColorMode_Night .pingce .pc2 .pc2_R .like .jian {background-color:#38363f; color:#1c1c1c;}
+
+/*
+------------------------------------------------ -x68
+@手游下载栏, 2015年10月26日 18:00 新增
+新增原因:手游栏目,下载模块的新样式
+------------------------------------------------ -x68
+*/
+.Mid2 {width:970px; height:auto;}
+
+.Mid2_L {float:left; margin-right:40px; padding-left:10px; width:620px; height:auto; position:relative;}
+.Mid2L_crumb {width:auto; height:14px; line-height:14px; color:#888; font-size:12px; font-family:SimSun;}
+.Mid2L_crumb a {color:#888;}
+.Mid2L_crumb a:hover {color:#ff5400;}
+.Mid2L_title {width:620px; height:auto; text-align:center; border-bottom:1px solid #eee;}
+.Mid2L_title h1 {margin:0; padding:20px 0; width:620px; height:auto; line-height:30px; color:#3b3b3b; font-size:24px;}
+.Mid2L_title .detail {width:620px; height:28px; line-height:14px; color:#888; font-size:12px; font-family:SimSun;}
+.Mid2L_title .detail span.txt {padding:3px;}
+.Mid2L_title .detail span.txt.pl a {color:#f03c18;}
+/*下载*/
+.Mid2L_down {margin:-10px 0 10px; padding:6px 5px 0 12px; width:603px; height:118px; background:#f5f5f5;}
+.Mid2L_down .img {float:left; padding-top:11px; width:102px; height:90px;}
+.Mid2L_down .img img {float:left; width:90px; height:90px; border-radius:10px;}
+.Mid2L_down .con {float:left; padding-top:11px; width:292px; height:90px;}
+.Mid2L_down .con .tit {width:292px; height:40px; line-height:40px; color:#e62b2b; font-size:18px; font-weight:bold;}
+.Mid2L_down .con .txt {width:292px; height:22px; line-height:22px; color:#666; font-size:14px;}
+.Mid2L_down .con .txt a {color:#666;}
+.Mid2L_down .con .txt a:hover {color:#d3222a;}
+.Mid2L_down .dow {float:right; width:auto; height:118px;}
+.Mid2L_down .dow .code {float:left; margin-left:-101px; width:100px; height:116px; background:#fff; border:1px solid #ddd; position:absolute;}
+.Mid2L_down .dow .code div {width:100px; text-align:center;}
+.Mid2L_down .dow .code div.pic {height:100px;}
+.Mid2L_down .dow .code div.txt {height:16px; line-height:14px; color:#666; font-size:12px; font-family:SimSun;}
+.Mid2L_down .dow .btn {float:left; padding-top:8px; width:auto; min-width:157px; max-width:209px; height:104px; position:relative;}
+.Mid2L_down .dow .btn .btna {width:auto; height:52px}
+.Mid2L_down .dow .btn a {float:left; display:block; height:44px; line-height:44px; font-size:14px;}
+.Mid2L_down .dow .btn a.link1 {margin-right:2px; padding-left:15px; width:140px;}
+.Mid2L_down .dow .btn a.Android {margin:0 2px 8px 0; padding-left:15px; width:140px;}
+.Mid2L_down .dow .btn a.Android span {display:block; text-indent:43px; color:#fff; background:#31ac2f url("http://image.gamersky.com/webimg13/shouyou/new/ico2.png") 11px 0 no-repeat;}
+.Mid2L_down .dow .btn a.iOS {margin:0 2px 8px 0; padding-left:15px; width:140px;}
+.Mid2L_down .dow .btn a.iOS span {display:block; text-indent:43px; color:#fff; background:#007ebd url("http://image.gamersky.com/webimg13/shouyou/new/ico2.png") 11px -44px no-repeat;}
+.Mid2L_down .dow .btn a.Android.cur,
+.Mid2L_down .dow .btn a.iOS.cur,
+.Mid2L_down .dow .btn a.Android:hover,
+.Mid2L_down .dow .btn a.iOS:hover {background:url("http://image.gamersky.com/webimg13/shouyou/new/ar.png") 0 center no-repeat;}
+.Mid2L_down .dow .btn a.link2 {width:52px; line-height:44px; text-align:center; color:#fff; font-size:12px; font-family:SimSun; background:#494949;}
+.Mid2L_down .dow .btn a.link2:hover {background:#515151;}
+
+.Mid2L_con {padding-top:10px; width:620px; height:auto; line-height:28px; color:#333; font-size:16px;}
+.Mid2L_con p {margin:0 auto; padding:10px 0;}
+.Mid2L_con .n1 {color:#0066cb;}
+
+
+.PageColorMode_Night .Mid2_L .Mid2L_crumb a:hover {color:#fff;}
+.PageColorMode_Night .Mid2L_title {border-bottom:1px solid #444;}
+.PageColorMode_Night .Mid2L_title h1 {color:#ff9b1f;}
+.PageColorMode_Night .Mid2L_title .detail span.txt.pl a {color:#ff9b1f;}
+
+/*下载*/
+.PageColorMode_Night .Mid2L_down {background:#2d2d2d;}
+.PageColorMode_Night .Mid2L_con {color:#ababab;}
+
+
+/*针对移动端的优化*/
+.Mid2L_down {width:100%; height:auto; padding:0px;}
+.Mid2L_down .img {float:left; margin:0px; width:auto; height:auto; padding:0px;}
+.Mid2L_down .con {float:left; margin-left:10px; width:auto; height:auto; padding:0px;}
+.Mid2L_down .con .tit {width:100%; height:30px; padding:0px; line-height:30px;}
+.Mid2L_down .con .txt {width:100%;}
+.Mid2L_down .dow {display:none;}
+/*------------------------------------------------ -x68
+	评测文章图集样式,去除网页中的评测文章图集效果.
+------------------------------------------------ -x68*/
+.Slides
+{
+	width:100%;
+	height:auto;
+	background: transparent;
+}
+.Slides ul.Bimg li
+{
+    display: inline-block;
+}
+.Slides ul.Bimg li a div.mask
+{
+    display: none;
+}
+.Slides ul.Bimg li a div.txt
+{
+    position: relative;
+    margin-top: -40px;
+    width: 100%;
+    height: 40px;
+    background: url("http://image.gamersky.com/webimg15/mk3.png") 0px 0px repeat-x;
+    padding-left: 10px;
+    line-height: 40px;
+    text-shadow: 1px 1px 1px #000;
+    font-family: 'Microsoft YaHei';
+    font-size: 18px;
+    font-weight: bold;
+    color: #f2f2f3;
+}
+.Slides .focus-num
+{
+	display: none;
+}
+.Slides a.btn
+{
+	display: none;
+}
+
+/*------------------------------------------------ -x68
+	评测文章子节点标题样式.
+------------------------------------------------ -x68*/
+p .fc
+{
+	text-align: center;
+	font-size: 14px;
+	color: #666;
+}
+.title1
+{
+    margin: 1.7em 0px 1.7em 0px;
+	width:auto;
+	height:36px;
+	border-left: 4px solid #f44336;
+	background-color: #f5f5f5;
+    line-height: 36px;
+    font-size: 16px;
+	font-weight:bold;
+	text-indent:10px;
+	color: #353535;
+}
+
+/* 专栏分块标题 */
+.PageColorMode_Night #gsApp_MainBody .title1
+{
+	border-left: 4px solid #bc7d17;
+	background-color: #141414;
+	color: #808080;
+}
+/* “本文由游民星空制作发布，转载请注明出处。” */
+#gsApp_MainBody .tc
+{
+	color:#d32f2f;
+}
+.PageColorMode_Night #gsApp_MainBody .tc
+{
+	color:#bc7d17;
+}
+
+/* B站视频播放器样式 */
+.GSBiLiBiLiPlayer
+{
+	/*height: 62.4vw; 对应全屏宽度 */
+	height: 58vw; /* 对应App，Wap宽度 */
+    overflow: hidden;
+    position: relative;
+}
+.GSBiLiBiLiPlayerCore
+{
+    margin-top: -12%;
+    border: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;/*100vw*/
+    height: 9999px;
+    z-index: 9;
+}
+
+/*网站App下载引导*/
+.appdown
+{
+	display: none;
+}
+.recommend-app-btn-wrap
+{
+	display: none;
+}

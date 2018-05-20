@@ -1,0 +1,1354 @@
+/*------------------------------------------------ -x68
+	字体
+------------------------------------------------ -x68*/
+.PageFontSize_Min {font-size:17px;}
+.PageFontSize_Middle {font-size:20px;}
+.PageFontSize_Max {font-size:24px;}
+.PageFontSize_MinForBigScreen {font-size:17px;}
+.PageFontSize_MiddleForBigScreen {font-size:20px;}
+.PageFontSize_MaxForBigScreen {font-size:24px;}
+/*------------------------------------------------ -x68
+	基础标签样式
+------------------------------------------------ -x68*/
+*
+{
+	-webkit-touch-callout:none;
+	/*
+	-webkit-user-select:none;
+	-khtml-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	*/
+}
+body
+{
+    overflow-x:hidden;
+    margin:0;
+    padding:0px;
+    background-color:white;
+    color:#333;	
+    text-align:justify;
+	word-break:break-all;
+    -webkit-tap-highlight-color:transparent;
+    padding-bottom: 40px;
+	/*禁止选中内容, 禁止弹出内容菜单*/
+}
+.PageColorMode_Night body
+{
+	background-color:#191919;
+	color:#808080;
+}
+img
+{
+	border:0;
+}
+a {
+	color:#0075c4;
+	text-decoration:none;
+}
+a:focus
+{
+	outline:none;
+}
+.PageColorMode_Night a
+{
+	color:#085c9f;
+}
+/*------------------------------------------------ -x68
+	基础业务内容样式
+------------------------------------------------ -x68*/
+.Button
+{
+	/*禁止选中内容, 禁止弹出内容菜单*/
+	-webkit-touch-callout:none; 
+	-webkit-user-select:none;
+}
+.Touching
+{
+	opacity: 0.5;
+}
+.GSApp_InvalidContent
+{
+	display: none;
+}
+.GSApp_SplitLine
+{
+	height: 8px;
+	border-top: 0.5px solid #e2e2e2;
+	background-color: #f5f5f5;
+}
+.PageColorMode_Night .GSApp_SplitLine
+{
+	border-top: 0.5px solid #222;
+	background-color: #141414;
+}
+.GSApp_TitleBar
+{
+	height: 42px;
+	border-top: 0.5px solid #e2e2e2;
+	/*border-bottom: 0.5px solid #e2e2e2;*/
+	padding-left: 12px;
+	line-height: 42px;
+	font-size: 15px;
+	font-weight: 500;
+}
+.PageColorMode_Night .GSApp_TitleBar
+{
+	border-top: 0.5px solid #222;
+}
+.GSApp_TitleBar .Caption::before
+{
+	content: " ";
+	display: inline-block;
+	margin-top: 1px;
+	margin-right: 5px;
+	background: red;
+	width: 3px;
+	height: 12px;
+}
+.PageColorMode_Night .GSApp_TitleBar .Caption::before
+{
+	background: #bc7d17;
+}
+.GSApp_TitleBar .Button
+{
+	float: right;
+	padding: 0px 14.5px 0px 14.5px;
+}
+.GSApp_TitleBar .Button.Last
+{
+	margin-right: 12px;
+}
+.GSApp_TitleBar .Button.Selected
+{
+	font-weight: bold;
+	color: #d32f2f;
+}
+.PageColorMode_Night .GSApp_TitleBar .Button.Selected
+{
+	COLOR: #bc7d17;
+}
+/*------------------------------------------------ -x68
+	标题栏
+------------------------------------------------ -x68*/
+#gsApp_Title
+{
+	margin: 0px 0px 2px 0px;
+	padding: 24px 12px 0px 12px;
+	line-height: 32px;
+	font-size: 24px;
+	font-weight: bold;
+	color: black;
+}
+.PageColorMode_Night #gsApp_Title
+{
+	color: #808080;
+}
+/*------------------------------------------------ -x68
+	副标题栏
+------------------------------------------------ -x68*/
+#gsApp_Subtitle
+{
+	padding: 0px 12px 0px 12px;
+	line-height: 20px;
+	font-size: 12px;
+	color: #b2b2b2;
+}
+.PageColorMode_Night #gsApp_Subtitle
+{
+	color: #085c9f;
+}
+/*------------------------------------------------ -x68
+	正文内容
+------------------------------------------------ -x68*/
+#gsApp_MainBody
+{
+	padding: 12px 12px 0px 12px;
+	line-height:28px;
+	font-size: 17px;
+}
+.PageFontSize_Min #gsApp_MainBody
+{
+	font-size: 15px;
+}
+.PageFontSize_Max #gsApp_MainBody
+{
+	font-size: 20px;
+}
+#gsApp_MainBody p
+{
+	-webkit-margin-after: 1.7em;
+}
+#gsApp_MainBody p:first-of-type
+{
+	-webkit-margin-before: 0em;
+}
+#gsApp_MainBody iframe
+{
+	width: 100%;
+}
+/*#gsApp_MainBody img {display:none; visibility:hidden;}*/
+#gsApp_MainBody img{
+	display: block;
+	width: 100%;
+	height: auto;
+}
+#gsApp_MainBody p{
+    line-height: 15px;
+    font-size: 15px;
+    color: #888;
+}
+#gsApp_MainBody #youkuplayer0 img {display:inherit; visibility:visible;}
+/*------------------------------------------------ -x68
+	图片容器
+------------------------------------------------ -x68*/
+.GSApp_ImageLoader
+{
+	display:none;
+}
+.GSApp_ImageContainer
+{
+	line-height: 15px;
+	font-size: 15px;
+	color: #888;
+}
+.PageColorMode_Night .GSApp_ImageContainer
+{
+	color: #555;
+}
+.GSApp_ImageBox
+{
+	display:inline-block;
+	float:none;
+	margin-bottom: 12px;
+	background-color: #eeeeee;
+	text-align:center;
+}
+.PageColorMode_Night .GSApp_ImageBox
+{
+	background-color: #222;
+}
+.GSApp_ImageBox img 
+{
+	float:left;
+	animation-fill-mode: forwards;
+}
+.PageColorMode_Night .GSApp_ImageBox img
+{
+	opacity: 0.5;
+}
+.GSApp_ImageBoxStatusBar
+{
+	display:inline;
+	visibility: visible;
+	margin:-44px 0px 0px 0px;
+	line-height:40px;
+	text-align:right;
+}
+.GSApp_ImageBoxStatusBar .ImgSetLogo
+{
+	float:right;
+	/*margin:10px 0px 0px 0px;*/
+    margin: 0px;
+	/*width:auto;*/
+    width: 100%;
+	height: 44px;
+	background-image: url(../gsAppHTMLTemplate_image/background_BottomBarOfImageSet@2x.png);
+	background-position: center top;
+	background-size: 350px 44px;
+	background-repeat: no-repeat;
+    /*padding: 0px 10px 0px 10px;*/
+    padding: 0px;
+	line-height: 44px;
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+	color: #fff;
+}
+.GSApp_ImageBoxStatusBar .ImgSetLogo .Icon
+{
+    background-image: url(../gsAppHTMLTemplate_image/icon_ExpandIcon@2x.png);
+    background-position: center center;
+    background-size: 25px 20px;
+    background-repeat: no-repeat;
+}
+.GSApp_ImageBoxStatusBar .ImgSetLogo .Caption
+{
+    font-size: 16px;
+    color: #ffffff;
+}
+.GSApp_ImageBoxStatusBar .GIFLogo
+{
+	float:right;
+	margin:7px 0px 0px 0px;
+	width:60px;
+	height:37px;
+	background-image:url(../gsAppHTMLTemplate_image/icon_GIFImageSign@2x.png);
+	background-size:100% 100%;
+}
+.GSApp_ImgSetBox
+{
+	margin:0px 10px 10px 2px; 
+	box-shadow:0px 0px 1px #000;
+}
+.GSApp_ImgSetBox img
+{
+	width:100%;
+}
+.GSApp_ImgSetWhitePage 
+{
+	margin:0px 10px 0px 0px;
+	box-shadow:0px 0px 1px #000;
+	background-color:#eee;
+}
+.PageColorMode_Night .GSApp_ImgSetWhitePage
+{
+	background-color:#2c2c2c;
+}
+@keyframes GSApp_Image_EaseOutAnimation
+{
+	from
+	{
+		opacity:0;
+	}
+	to
+	{
+		opacity:1;
+	}
+}
+@keyframes GSApp_Image_EaseOutAnimation_UIMode_Night
+{
+	from
+	{
+		opacity:0;
+	}
+	to
+	{
+		opacity:0.5;
+	}
+}
+/*------------------------------------------------ -x68
+	视频
+------------------------------------------------ -x68*/
+.GSApp_Video 
+{
+	background-color: #eeeeee;
+	
+	/*
+	width: 100%;
+	height: 232px;
+	*/
+	
+	/*
+	background-position:center center;
+	background-repeat:no-repeat; 
+	background-size: 91px 91px; 
+	background-image:url(../gsAppHTMLTemplate_image/holder_Video_Background@2x.png);
+	*/
+}
+.PageColorMode_Night .GSApp_Video
+{
+	background-color: #1B1A1F;
+}
+.GSApp_Video .PlayButtonBackground
+{
+	float:none;
+	border-radius:40px;
+	width:80px;
+	height:80px;
+	background-position:center center;
+	background-repeat:no-repeat;
+	-webkit-filter:blur(4px);
+}
+.GSApp_Video .PlayButton
+{
+	float:none;
+	margin-top:-80px;
+	border-radius:40px;
+	width:80px;
+	height:80px;
+	background-repeat:no-repeat;
+	background-position:center center;
+	background-size:80px 80px;
+	background-image:url(../gsAppHTMLTemplate_image/icon_Play@2x.png);
+	-webkit-filter:hue-rotate(0deg);
+}
+/*------------------------------------------------ -x68
+	订阅条
+------------------------------------------------ -x68*/
+.GSApp_SubscribeBar
+{
+	padding: 0px 12px 0px 12px;
+	margin: 18px 0px 10px 0px;
+	width: 100%;
+	/* 如果不设置该属性，文字较长时，则会撑大表格*/
+	table-layout:fixed;
+}
+.GSApp_SubscribeBar.Last
+{
+	margin-bottom: 5px;
+}
+.GSApp_SubscribeBar .Icon
+{
+	width: 40px;
+	height: 40px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: auto 40px;
+}
+.PageColorMode_Night .GSApp_SubscribeBar .Icon
+{
+	opacity: 0.5;
+} 
+.GSApp_SubscribeBar .Caption
+{
+	overflow: hidden;
+	padding: 0px 8.5px 0px 8.5px;
+	text-align: left;
+}
+.GSApp_SubscribeBar .Caption .FirstCaption
+{
+	margin-top: 3px;
+	line-height: 17px;
+	font-size: 17px;
+	color: black;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.PageColorMode_Night .GSApp_SubscribeBar .Caption .FirstCaption
+{
+	color: #808080;
+}
+.GSApp_SubscribeBar .Caption .SecondCaption
+{
+	margin-top: 5px;
+	line-height: 12px;
+	font-size: 11px;
+	color: #b2b2b2;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.PageColorMode_Night .GSApp_SubscribeBar .Caption .SecondCaption
+{
+	color: #555;
+}
+.GSApp_SubscribeBar .Operation
+{
+	width: 66px;
+}
+.GSApp_SubscribeBar .Operation .Button
+{
+	float: left;
+	width: 64px;
+	height: 28px;
+	border: 0.5px solid #2196f3;
+	border-radius: 14px;
+	background-color: white;
+	line-height: 28px;
+	font-size: 15px;
+	color: #2196f3;
+}
+.PageColorMode_Night .GSApp_SubscribeBar .Operation .Button
+{
+	border: 0.5px solid #085c9f;
+	background-color: #191919;
+	color: #085c9f;
+}
+.GSApp_SubscribeBar .Operation .Button.Selected
+{
+	content: "已订阅";
+	/*
+	background-color: #2196f3;
+	color: white;
+	*/
+}
+.PageColorMode_Night .GSApp_SubscribeBar .Operation .Button.Selected
+{
+	/*background-color: #085c9f;*/
+	/*color: #808080;*/
+}
+.GSApp_SubscribeBar .Operation .Button span
+{
+	pointer-events: none;
+}
+.GSApp_SubscribeBar .Operation .Button span::before
+{
+	content: "";
+	display: inline-block;
+	margin-right: 2.5px;
+    width: 10px;
+    height: 28px;
+	background-position: center;
+	background-image: url(../gsAppHTMLTemplate_image/icon_Add_10x10@2x.png);
+    background-size: 10px 10px;
+	background-repeat: no-repeat;
+	vertical-align: top;
+}
+.PageColorMode_Night .GSApp_SubscribeBar .Operation .Button span::before
+{
+	background-image: url(../gsAppHTMLTemplate_image/icon_Add_10x10_UIMode_Night@2x.png);
+}
+/*------------------------------------------------ -x68
+	点赞条
+------------------------------------------------ -x68*/
+.GSApp_PraiseBar
+{
+	width: 100%;
+	height: 50px;
+	padding-top: 0px;/* 24px; */
+	text-align: center;
+}
+.GSApp_PraiseBar.DoubleButton
+{
+	height: 90px;
+}
+.GSApp_PraiseBar .Description
+{
+	line-height: 40px;
+	font-size: 12px;
+	color: #888;
+}
+.PageColorMode_Night .GSApp_PraiseBar .Description
+{
+	color: #555;
+}
+.GSApp_PraiseBar .Button
+{
+	display: inline-block;
+	padding: 0px 24px;
+	height: 26px;
+	border: 0.5px solid #bbb;
+	border-radius: 16px;
+	line-height: 26px;
+	text-align: center;
+	font-size: 12px;
+	color: #888;
+}
+.PageColorMode_Night .GSApp_PraiseBar .Button
+{
+	border: 0.5px solid #555;
+	color: #555;
+}
+.GSApp_PraiseBar .Button.Selected
+{
+	border: 0.5px solid #2196f3;
+	color: #2196f3;
+}
+.PageColorMode_Night .GSApp_PraiseBar .Button.Selected
+{
+	border: 0.5px solid #085c9f;
+	color: #085c9f;
+}
+.GSApp_PraiseBar .Caption
+{
+	pointer-events: none;
+}
+.GSApp_PraiseBar .Icon::before
+{
+    content: "";
+	display: inline-block;
+	margin-top: 7px;
+    margin-right: 5.0px;
+    width: 10.5px;
+    height: 10px;
+    background-image: url(../gsAppHTMLTemplate_image/icon_Praise_10_5x10@2x.png);
+    background-size: 10.5px 10px;
+	background-repeat: no-repeat;
+	vertical-align: top;
+}
+.PageColorMode_Night .GSApp_PraiseBar .Icon::before
+{
+    background-image: url(../gsAppHTMLTemplate_image/icon_Praise_10_5x10_UIMode_Night@2x.png);
+}
+.GSApp_PraiseBar .Button.Selected .Icon::before
+{
+    background-image: url(../gsAppHTMLTemplate_image/icon_Praise_10_5x10_Selected@2x.png);	
+}
+.PageColorMode_Night .GSApp_PraiseBar .Button.Selected .Icon::before
+{
+    background-image: url(../gsAppHTMLTemplate_image/icon_Praise_10_5x10_Selected_UIMode_Night@2x.png);	
+}
+
+/*------------------------------------------------ -x68
+	推荐游戏条
+------------------------------------------------ -x68*/
+.GSApp_GameBar
+{
+	margin: 10px 0px 10px 0px;
+	width: 100%;
+	/* 如果不设置该属性，文字较长时，则会撑大表格*/
+	table-layout:fixed;
+	padding: 0px 12px 0px 12px;
+}
+.GSApp_GameBar .Cover
+{
+	width: 64px;
+	height: 90px;
+	background-color: #ddd;
+}
+.PageColorMode_Night .GSApp_GameBar .Cover
+{
+	background-color: #222;
+}
+.GSApp_GameBar .Cover img
+{
+	width: 100%;
+	height: 100%;
+}
+.GSApp_GameBar .Title
+{
+	height: 38px;
+	padding-left: 12px;
+	overflow: hidden;
+	line-height: 38px;
+	font-size: 15px;
+	font-weight: bold;
+	text-align: left;
+	color: black;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	background-color: #f5f5f5;
+}
+.PageColorMode_Night .GSApp_GameBar .Title
+{
+	background-color: #1e1e1e;
+	color: 888888;
+}
+.GSApp_GameBar .Score
+{
+	width: 87px;
+	height: 90px;
+	background-color: #f5f5f5;
+}
+.PageColorMode_Night .GSApp_GameBar .Score
+{
+	background-color: #1e1e1e;
+}
+.GSApp_GameBar .Score .Box
+{
+	margin: auto;
+	width: 64px;
+	height: 66px;
+	border-radius: 4px;
+	background-color: white;
+}
+.PageColorMode_Night .GSApp_GameBar .Score .Box
+{
+	background-color: #191919;
+}
+.GSApp_GameBar .Score .Box .Title
+{
+	height: 40px;
+	padding: 0px;
+	background-color: transparent;
+	line-height: 50px;
+	text-align: center;
+	font-size: 30px;
+	font-weight: bold;
+	color: #2aae68;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.PageColorMode_Night .GSApp_GameBar .Score .Box .Title
+{
+	color: #1a683f;
+}
+.GSApp_GameBar .Score .Box .Subtitle
+{
+	height: 26px;
+	padding: 0px;
+	line-height: 26px;
+	text-align: center;
+	font-size: 9px;
+	color: #888;
+    white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.PageColorMode_Night .GSApp_GameBar .Score .Box .Subtitle
+{
+	color: #555;
+}
+.GSApp_GameBar .Badges
+{
+	height: 18px;
+	background-color: #f5f5f5;
+	padding-left: 12px;
+	overflow: hidden;
+	line-height: 8px;
+	text-align: left;
+	white-space: nowrap;
+}
+.PageColorMode_Night .GSApp_GameBar .Badges
+{
+	background-color: #1e1e1e;
+}
+.GSApp_GameBar .Badges span
+{
+	display: inline-block;
+	margin-right: 8px;
+	border: 0.5px solid #ddd;
+	border-radius: 2px;
+	background-color: #f5f5f5;
+	padding: 3px 4px 3px 4px;
+	line-height: 10px;
+	font-size: 11px;
+	color: #888;
+}
+.PageColorMode_Night .GSApp_GameBar .Badges span
+{
+	border: 0.5px solid #222222;
+	background-color: #1e1e1e;
+	color: #555555;
+}
+.GSApp_GameBar .Tags
+{
+	height: 30px;
+	padding-left: 12px;
+	background-color: #f5f5f5;
+	font-size: 11px;
+	color: #888;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.PageColorMode_Night .GSApp_GameBar .Tags
+{
+	background-color: #1e1e1e;
+	color: #555;
+}
+/*------------------------------------------------ -x68
+	相关推荐
+------------------------------------------------ -x68*/
+.GSApp_RelatedContent
+{
+	width: 100%;
+	border-top: 0.5px solid #e2e2e2;
+	padding: 12px;
+	/* 如果不设置该属性，文字较长时，则会撑大表格*/
+	table-layout:fixed;
+	/*禁止选中内容, 禁止弹出内容菜单*/
+	-webkit-touch-callout:none; 
+	-webkit-user-select:none;
+}
+.PageColorMode_Night .GSApp_RelatedContent
+{
+	border-top: 0.5px solid #222;
+}
+.GSApp_RelatedContent.Touching
+{
+	opacity: 1;
+	background-color: #e2e2e2;
+}
+.PageColorMode_Night.GSApp_RelatedContent.Touching
+{
+	opacity: 1;
+	background-color: #222222;
+}
+.GSApp_RelatedContent .Title
+{
+	display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	text-overflow: ellipsis;
+	padding-right: 12px;
+	line-height: 24px;
+	font-size: 17px;
+}
+.GSApp_RelatedContent .Thumbnail
+{
+	width: 120px;
+	height: 72px;
+	background-color: #ddd;
+	background-position: left top;
+	background-size: 120px 100%;
+	background-repeat: no-repeat;
+}
+.PageColorMode_Night .GSApp_RelatedContent .Thumbnail
+{
+	opacity: 0.5;
+}
+.GSApp_RelatedContent .Thumbnail img
+{
+	display: none;
+}
+.GSApp_RelatedContent .Badges
+{
+	height: 15px;
+	padding-right: 12px;
+	line-height: 15px;
+	font-size: 11px;
+	color: #888;
+}
+.PageColorMode_Night .GSApp_RelatedContent .Badges
+{
+	color: #555;
+}
+.GSApp_RelatedContent .Badges .RepliesCount
+{
+	margin-left: 8px;
+}
+.GSApp_RelatedContent .Badges .RepliesCount::before
+{
+    content: "";
+	display: inline-block;
+    margin-right: 2.5px;
+    width: 12px;
+    height: 15px;
+	background-image: url(../gsAppHTMLTemplate_image/icon_Reply_12x9@2x.png);
+	background-position: center;
+    background-size: 12px 9px;
+	background-repeat: no-repeat;
+	vertical-align: top;
+}
+.PageColorMode_Night .GSApp_RelatedContent .Badges .RepliesCount::before
+{
+	background-image: url(../gsAppHTMLTemplate_image/icon_Reply_12x9_UIMode_Night@2x.png);
+}
+.GSApp_RelatedContent .Badges .Badge
+{
+	float: right;
+	border: 0.5px solid #ddd;
+	border-radius: 2px;
+	padding: 0px 4px 0px 4px;
+	line-height: 15px;
+	font-size: 9px;
+	color: #888;
+}
+.PageColorMode_Night .GSApp_RelatedContent .Badges .Badge
+{
+	border: 0.5px solid #222;
+	color: #888;
+}
+/*------------------------------------------------ -x68
+	评论相关内容
+------------------------------------------------ -x68*/
+.GSApp_Comment
+{
+	width: 100%;
+	padding: 12px 12px 0px 12px;
+	border-top: 0.5px solid #e2e2e2;
+}
+.PageColorMode_Night .GSApp_Comment
+{
+	border-top: 0.5px solid #222;
+}
+.GSApp_Comment .UserHeadImage
+{
+	width: 38px;
+}
+.GSApp_Comment .UserHeadImage .Image
+{
+	width: 38px;
+	height: 38px;
+	border-radius: 19px;
+	background-position: center;
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+.PageColorMode_Night .GSApp_Comment .UserHeadImage .Image
+{
+	opacity: 0.5;
+}
+.GSApp_Comment .UserHeadImage .UserGroupIcon
+{
+	float: right;
+	margin-top: -14px;
+	width: 14px;
+	height: 14px;
+	border-radius: 7px;
+	background-color: white;
+	background-position: center;
+	background-size: 14px 14px;
+	background-repeat: no-repeat;
+}
+.PageColorMode_Night .GSApp_Comment .UserHeadImage .UserGroupIcon
+{
+	background-color: #191919;
+}
+.GSApp_Comment .UserHeadImage .UserGroupIcon.OfficialUser
+{
+	background-image: url(../gsAppHTMLTemplate_image/icon_OfficialUser_14x14@3x.png);
+}
+.PageColorMode_Night .GSApp_Comment .UserHeadImage .UserGroupIcon.OfficialUser
+{
+	background-image: url(../gsAppHTMLTemplate_image/icon_OfficialUser_14x14_UIMode_Night@3x.png);
+}
+.GSApp_Comment .UserHeadImage .UserGroupIcon.ThirdPartyUser
+{
+	background-image: url(../gsAppHTMLTemplate_image/icon_ThirdPartyUser_14x14@3x.png);
+}
+.PageColorMode_Night .GSApp_Comment .UserHeadImage .UserGroupIcon.ThirdPartyUser
+{
+	background-image: url(../gsAppHTMLTemplate_image/icon_ThirdPartyUser_14x14_UIMode_Night@3x.png);
+}
+.GSApp_Comment .UserInfoBar .UserLevel
+{
+	display: inline-block;
+	margin-left: 4px;
+	width: 16px;
+	height: 16px;
+	vertical-align: middle;
+	background-image: url(../gsAppHTMLTemplate_image/background_UserLevel_16x16@3x.png);
+	background-size: 16px 16px;
+	background-position: center -1px;
+	line-height: 15px;
+	text-align: center;
+	font-size: 9px;
+	color: white;
+}
+.PageColorMode_Night .GSApp_Comment .UserInfoBar .UserLevel
+{
+	background-image: url(../gsAppHTMLTemplate_image/background_UserLevel_16x16_UIMode_Night@3x);
+	color: #191919;
+}
+.GSApp_Comment .Content
+{
+	padding-left: 12px;
+}
+.GSApp_Comment .UserInfoBar
+{
+	height: 26px;
+	text-align: left;
+	font-size: 15px;
+}
+.GSApp_Comment .UserName
+{
+	height: 26px;
+	text-align: left;
+	font-size: 15px;
+	color: #0075c4;
+}
+.PageColorMode_Night .GSApp_Comment .UserName
+{
+	color: #085c9f;
+}
+.GSApp_Comment .CommentReply
+{
+	display: -webkit-box;
+	overflow: hidden;
+	text-overflow: ellipsis;
+    -webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+	text-overflow: ellipsis;
+	margin: 0px;
+	padding: 5.5px 7.5px 4.5px 7.5px;
+	border: 0.5px solid #ddd;
+	border-bottom: none;
+	background-color: #fafafa;
+	text-align: left;
+	line-height: 20px;
+	font-size: 12px;
+}
+.PageColorMode_Night .GSApp_Comment .CommentReply
+{
+	border: 0.5px solid #222;
+	background-color: #1e1e1e;
+}
+.GSApp_Comment .CommentReply.QuanZiMode
+{
+	border:none;
+}
+.GSApp_Comment .CommentReply .Badge
+{
+	height: 1.5px;
+    font-size: 9px;
+    text-align: right;
+    line-height: 9px;
+    margin: -3px -5px 0px 0px;
+    color: #ccc;
+    overflow: visible;
+}
+.PageColorMode_Night .GSApp_Comment .CommentReply .Badge
+{
+	color: #555;
+}
+.GSApp_Comment .CommentReply.QuanZiMode .Badge
+{
+	visibility: hidden;
+}
+.GSApp_Comment .CommentReply .UserName
+{
+	font-size: 12px;
+}
+.GSApp_Comment .CommentReply.First
+{
+	margin: 0px;
+}
+.GSApp_Comment .CommentReply.Last
+{
+	margin-bottom: 8px;
+	border-bottom: 0.5px solid #ddd;
+}
+
+.GSApp_Comment .CommentReply.CommentReply.QuanZiMode.Last
+{
+	border: none;
+}
+.PageColorMode_Night .GSApp_Comment .CommentReply.Last
+{
+	margin-bottom: 8px;
+	border-bottom: 0.5px solid #222;
+}
+.GSApp_Comment .CommentReply.Hidden
+{
+	display: none;
+}
+.GSApp_Comment .CommentReply.Touching
+{
+	opacity: 1.0;
+	color: rgba(136, 136, 136, 0.5);
+}
+.GSApp_Comment .CommentReply.ShowAllContent
+{
+    -webkit-line-clamp: 999999;
+}
+.CommentReplyExpandButton
+{
+	border: 0.5px solid #ddd;
+	border-top: none;
+	border-bottom: none;
+	padding: 3px 0px 11px 0px;
+	background-color: #fafafa;
+	text-align: center;
+	font-size: 12px;
+	color: #888;	
+}
+.PageColorMode_Night .CommentReplyExpandButton
+{
+	border-color: #222;
+	background-color: #1e1e1e;
+	color: #888;	
+}
+.CommentReplyExpandButton.QuanZiMode
+{
+	border: none;
+}
+.CommentReplyExpandButton.Last
+{
+	border-bottom: 0.5px solid #ddd;
+}
+.CommentReplyExpandButton.QuanZiMode.Last
+{
+	border: none;
+}
+.PageColorMode_Night .CommentReplyExpandButton.Last
+{
+	border-color: #222;
+}
+.GSApp_Comment .ShowAllRepliesButton
+{
+	padding: 7.5px 7.5px 8.5px 7.5px;
+	border: 0.5px solid #ddd;
+	border-bottom: none;
+	background-color: #fafafa;
+	text-align: center;
+	line-height: 20px;
+	font-size: 12px;
+	color: #888;
+}
+.PageColorMode_Night .GSApp_Comment .ShowAllRepliesButton
+{
+	border: 0.5px solid #222;
+	background-color: #1e1e1e;
+	color: #888;
+}
+.GSApp_Comment .ShowAllRepliesButton.QuanZiMode
+{
+	border: none;
+	padding-top: 0px;
+	text-align: left;
+	color: #0075c4;
+}
+.PageColorMode_Night .GSApp_Comment .ShowAllRepliesButton.QuanZiMode
+{
+	color: #085c9f;
+}
+.GSApp_Comment .CommentContent
+{
+	display: -webkit-box;
+	text-overflow: ellipsis;
+    -webkit-line-clamp: 15;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	text-align: left;
+	line-height: 22px;
+	font-size: 15px;
+}
+.GSApp_Comment .CommentContent.ShowAllContent
+{
+    -webkit-line-clamp: 999999;
+}
+.GSApp_Comment .CommentExpandButton
+{
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	font-size: 15px;
+	color: #888;
+}
+.GSApp_Comment .OptionBar
+{
+	height: 36px;
+	line-height: 36px;
+	font-size: 11px;
+	color: #888;
+}
+.PageColorMode_Night .GSApp_Comment .OptionBar
+{
+	color: #555;
+}
+.GSApp_Comment .OptionBar .Device
+{
+	margin-left: 8px;
+}
+.GSApp_Comment .OptionBar .ReplyButton
+{
+	float: right;
+	vertical-align: middle;
+}
+.GSApp_Comment .OptionBar .ReplyButton::before
+{
+    content: "";
+	display: inline-block;
+	margin: 13px 5px 0px 0px;
+    width: 12px;
+	height: 11px;
+    background-image: url(../gsAppHTMLTemplate_image/icon_Reply_12x9@2x.png);
+	background-position: center;
+	background-size: 12px 9px;
+	background-repeat: no-repeat;
+	vertical-align: top;
+}
+.PageColorMode_Night .GSApp_Comment .OptionBar .ReplyButton::before
+{
+    background-image: url(../gsAppHTMLTemplate_image/icon_Reply_12x9_UIMode_Night@2x.png);
+}
+.GSApp_Comment .OptionBar .PraiseButton
+{
+	float: right;
+}
+.GSApp_Comment .OptionBar .PraiseButton::before
+{
+    content: "";
+	display: inline-block;
+	margin: 13px 6px 0px 18px;
+    width: 10.5px;
+    height: 10px;
+    background-image: url(../gsAppHTMLTemplate_image/icon_Praise_10_5x10_FillMode@2x.png);
+	background-position: center;
+    background-size: 10.5px 10px;
+	background-repeat: no-repeat;
+	vertical-align: top;
+}
+.PageColorMode_Night .GSApp_Comment .OptionBar .PraiseButton::before
+{
+    background-image: url(../gsAppHTMLTemplate_image/icon_Praise_10_5x10_FillMode_UIMode_Night@2x.png);
+}
+.GSApp_Comment .OptionBar .PraiseButton.Selected::before
+{
+    background-image: url(../gsAppHTMLTemplate_image/icon_Praise_10_5x10_FillMode_Selected@2x.png);	
+}
+.PageColorMode_Night .GSApp_Comment .OptionBar .PraiseButton.Selected::before
+{
+    background-image: url(../gsAppHTMLTemplate_image/icon_Praise_10_5x10_FillMode_Selected_UIMode_Night@2x.png);	
+}
+.GSApp_Comment .OptionBar .PraiseButton.Selected
+{
+	color: #f44336;
+}
+.PageColorMode_Night .GSApp_Comment .OptionBar .PraiseButton.Selected
+{
+	color: #bc7d17;
+}
+.GSApp_CommentMoreButton
+{
+	width: 100%;
+	border-top: 0.5px solid #e2e2e2;
+	text-align: center;
+	font-size: 15px;
+	color: #888;
+}
+.PageColorMode_Night .GSApp_CommentMoreButton
+{
+	border-top: 0.5px solid #222;
+}
+.GSApp_CommentMoreButton .NoneData
+{
+	display: none;
+	/*display: inline-block;*/
+	height: 164px;
+    background-image: url(../gsAppHTMLTemplate_image/icon_NoneContent_32x32@2x.png);
+    background-position: center 51px;
+    background-repeat: no-repeat;
+    background-size: 32px 32px;
+    line-height: 198px;
+}
+.PageColorMode_Night .GSApp_CommentMoreButton .NoneData
+{
+    background-image: url(../gsAppHTMLTemplate_image/icon_NoneContent_32x32_UIMode_Night@2x.png);
+}
+.GSApp_CommentMoreButton .More
+{
+	height: 44px;
+	line-height: 44px;
+}
+.GSApp_CommentMoreButton .Loading
+{
+	display: none;
+	height: 44px;
+	line-height: 44px;
+}
+.GSApp_CommentMoreButton .Loading::before
+{
+    content: "";
+	display: inline-block;
+	margin: 13.5px 5px 0px 0px;
+    width: 15px;
+    height: 15px;
+    background-image: url(../gsAppHTMLTemplate_image/icon_Waiting_64x64@2x.gif);
+	background-position: center;
+    background-size: 15px 15px;
+	background-repeat: no-repeat;
+	vertical-align: top;
+}
+.GSApp_CommentMoreButton .NoneMoreData
+{
+	display: none;
+	height: 44px;
+	line-height: 44px;
+}
+/* 没有评论时 */
+.GSApp_CommentMoreButton.NoneData .NoneData
+{
+	display: inline-block;
+}
+.GSApp_CommentMoreButton.NoneData .More
+{
+	display: none;
+}
+.GSApp_CommentMoreButton.NoneData .Loading
+{
+	display: none;
+}
+.GSApp_CommentMoreButton.NoneData .NoneMoreData
+{
+	display: none;
+}
+/* 加载评论时 */
+.GSApp_CommentMoreButton.Loading .NoneData
+{
+	display: none;
+}
+.GSApp_CommentMoreButton.Loading .More
+{
+	display: none;
+}
+.GSApp_CommentMoreButton.Loading .Loading
+{
+	display: inline;
+}
+.GSApp_CommentMoreButton.NoneMoreData .NoneMoreData
+{
+	display: none;
+}
+/* 没有更多评论时 */
+.GSApp_CommentMoreButton.NoneMoreData .NoneData
+{
+	display: none;
+}
+.GSApp_CommentMoreButton.NoneMoreData .More
+{
+	display: none;
+}
+.GSApp_CommentMoreButton.NoneMoreData .Loading
+{
+	display: none;
+}
+.GSApp_CommentMoreButton.NoneMoreData .NoneMoreData
+{
+	display: inline;
+}
+/* 按下时 */
+.GSApp_CommentMoreButton.Touching
+{
+	opacity: 1.0;
+	color: rgba(136, 136, 136, 0.5);
+}
+
+/*------------------------------------------------ -x68
+	广告
+------------------------------------------------ -x68*/
+.GSApp_BigAd
+{
+	table-layout:fixed;
+	width: 100%;
+	border-top: 0.5px solid #e2e2e2;
+	padding: 12px 12px 0px 12px;
+}
+.PageColorMode_Night .GSApp_BigAd
+{
+	border-top: 0.5px solid #222;
+}
+.GSApp_BigAd img
+{
+	width: 100%;
+	border-radius: 4px;
+}
+.PageColorMode_Night img
+{
+	opacity: 0.5;
+}
+.GSApp_BigAd .TitleBar
+{
+	table-layout: fixed;
+	width: 100%;
+}
+.GSApp_BigAd .TitleBar.NoneTopBorder
+{
+	border-top: none;
+}
+.GSApp_BigAd .TitleBar
+{
+	border-bottom: none;
+}
+.GSApp_BigAd .TitleBar .Title
+{
+	line-height: 41px;
+	text-align: left;
+	font-size: 17px;
+	color: black;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.PageColorMode_Night .GSApp_BigAd .TitleBar .Title
+{
+	color: #888888;
+}
+.GSApp_BigAd .TitleBar .Badges
+{
+	width: 40px;
+	text-align: right;
+}
+.GSApp_BigAd .TitleBar span
+{
+	display: inline-block;
+	border: 0.5px solid #ddd;
+	border-radius: 2px;
+	background-color: #f5f5f5;
+	padding: 3px 4px 3px 4px;
+	line-height: 11px;
+	font-size: 11px;
+	color: #888;
+}
+.PageColorMode_Night .GSApp_BigAd .TitleBar span
+{
+	border: 0.5px solid #222;
+	background-color: #1e1e1e;
+	color: #888;
+}
